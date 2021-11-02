@@ -13,7 +13,7 @@
     * [Read Aloud Text](#read-aloud-text)
     * [Open Advanced Translation Panel](#open-advanced-translation-panel)
   * [オプション](#オプション)
-    * [デフォルトで用意されているテキスト読み上げに使うAPI](#デフォルトで用意されているテキスト読み上げに使うAPI)
+    * [デフォルトで用意されている翻訳エンジン](#デフォルトで用意されている翻訳エンジン)
       * [Google Translate (No API key required)](#google-translate-no-api-key-required)
       * [Libre Translate](#libre-translate)
     * [デフォルトで用意されているテキスト読み上げに使うAPI](#デフォルトで用意されているテキスト読み上げに使うAPI)

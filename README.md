@@ -20,6 +20,7 @@
       * [Google Text To Speech (No API key required)](#google-text-to-speech-no-api-key-required)
     * [Formatter class provided by default](#formatter-class-provided-by-default)
       * [DefaultFormatter](#defaultformatter)
+  * [Console Command](#console-command)
   * [Author](#Author)
   * [History](#History)
 <!--te-->
@@ -138,6 +139,24 @@ No API key is required.
 Use ```FName::NameToDisplayString``` to convert the text to be translated.  
 The format of the translation result produces a combination of several delimiters and several naming patterns.    
 If the text contains line breaks in any of the conversions, no conversion will be performed.  
+
+## Console Command
+
+|**Command**|**Arguments**|**Description**|
+|---|---|---|
+|QuickTranslation.Translator.Translate|Text[FString] Source Language Code[FName] Target Language Code[FName]|Specify the character string to be translated, the language code before translation, and the language code after translation, and start translation.|
+|QuickTranslation.Translator.DetectLanguage|Text[FString]|Detects what language the specified string is in.|
+|QuickTranslation.Translator.GetSupportedSourceLanguages| |Logs a list of supported translation source languages.|
+|QuickTranslation.Translator.GetSupportedTargetLanguages|SourceLanguage[FName]|Logs a list of supported translation target languages.|
+|QuickTranslation.Translator.GetHistories| |Logs a list of cached histories.|
+|QuickTranslation.Translator.ClearHistories| |Delete cached histories data and json data on disk.|
+|QuickTranslation.Speaker.PlaySpeaker|Text[FString] Source Language Code[FName] Is Slowly[bool]|Specify the sentence you want to read and the language code of that sentence, and start reading.|
+|QuickTranslation.Speaker.StopSpeaker| |Stop the currently playing audio.|
+|QuickTranslation.Speaker.IsPlayingSpeaker| |Logs whether the text is currently being read aloud.|
+|QuickTranslation.Speaker.GetCurrentProgress| |Logs the current playback progress.|
+|QuickTranslation.Speaker.GetSupportedLanguages| |Logs a list of supported languages.|
+|QuickTranslation.Formatter.ConvertToTranslatableText|Text[FString]|Converts the specified string to a translatable format and returns it.|
+|QuickTranslation.Formatter.ConvertToFormattedTexts|Text[FString]|Converts the translation result string to a string in various formats and returns it.|
 
 ## Author
 

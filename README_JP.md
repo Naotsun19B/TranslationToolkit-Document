@@ -20,6 +20,7 @@
       * [Google Text To Speech (No API key required)](#google-text-to-speech-no-api-key-required)
     * [デフォルトで用意されているフォーマッタークラス](#デフォルトで用意されているフォーマッタークラス)
       * [DefaultFormatter](#defaultformatter)
+  * [コンソールコマンド](#コンソールコマンド)
   * [作者](#作者)
   * [履歴](#履歴)
 <!--te-->
@@ -138,6 +139,24 @@ APIキーなどは不要です。
 翻訳するテキストへの変換には```FName::NameToDisplayString```を使用します。  
 翻訳結果のフォーマットはいくつかの区切り文字といくつかの命名パターンの組み合わせを生成します。  
 いずれの変換でもテキストに改行が含まれる場合は変換を行いません。
+
+## コンソールコマンド
+
+|**コマンド**|**引数**|**説明**|
+|---|---|---|
+|QuickTranslation.Translator.Translate|Text[FString] Source Language Code[FName] Target Language Code[FName]|翻訳する文字列、翻訳前の言語コード、翻訳後の言語コードを指定して、翻訳を開始します。|
+|QuickTranslation.Translator.DetectLanguage|Text[FString]|指定された文字列がどの言語であるかを検出します。|
+|QuickTranslation.Translator.GetSupportedSourceLanguages| |サポートされている翻訳ソース言語のリストをログ出力します。|
+|QuickTranslation.Translator.GetSupportedTargetLanguages|SourceLanguage[FName]|サポートされている翻訳対象言語のリストをログ出力します。|
+|QuickTranslation.Translator.GetHistories| |キャッシュされた履歴のリストをログ出力します。|
+|QuickTranslation.Translator.ClearHistories| |ディスク上のキャッシュされた履歴データを削除します。|
+|QuickTranslation.Speaker.PlaySpeaker|Text[FString] Source Language Code[FName] Is Slowly[bool]|読み上げる文字列とその文字列の言語コードを指定して、音声読み上げを開始します。|
+|QuickTranslation.Speaker.StopSpeaker| |現在再生中のオーディオを停止します。|
+|QuickTranslation.Speaker.IsPlayingSpeaker| |テキストが現在読み上げられているかどうかをログ出力します。|
+|QuickTranslation.Speaker.GetCurrentProgress| |現在の再生の進行状況をログに記録します。|
+|QuickTranslation.Speaker.GetSupportedLanguages| |サポートされている言語のリストをログ出力します。|
+|QuickTranslation.Formatter.ConvertToTranslatableText|Text[FString]|指定された文字列を翻訳可能な形式に変換してログ出力します。|
+|QuickTranslation.Formatter.ConvertToFormattedTexts|Text[FString]|翻訳結果の文字列をさまざまな形式の文字列に変換してログ出力します。|
 
 ## 作者
 

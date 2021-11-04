@@ -1,6 +1,6 @@
-# QuickTranslation
+# TranslationToolkit
 
-![Plugin](https://user-images.githubusercontent.com/51815450/139860221-2c6bfde4-2ad2-4cb5-b820-6826b0ea13cd.PNG)
+![Plugin](https://user-images.githubusercontent.com/51815450/140312410-fe1065d5-5e13-4cdc-93cb-2e0b824a0ebf.PNG)
 
 <!--ts-->
   * [概要](#概要)
@@ -91,11 +91,11 @@
 
 ## オプション
 
-![ShortcutKeySettings](https://user-images.githubusercontent.com/51815450/139867194-729ca071-6368-4af3-9074-7d97cdd7ed5a.PNG)
+![ShortcutKeySettings](https://user-images.githubusercontent.com/51815450/140312546-9fff3416-5c32-471d-b1de-3f2203273fd5.PNG)
 
 ここまででご紹介したショートカットキーはエディタ環境設定のキーボードショートカットから変更できます。
 
-![Settings](https://user-images.githubusercontent.com/51815450/139868640-bba8eec5-36c5-45a1-af1a-8ee4bb8e084b.PNG)
+![Settings](https://user-images.githubusercontent.com/51815450/140312455-09874421-c0ac-4f86-bd4f-11f274bb4532.PNG)
 
 |**カテゴリ**|**項目**|**説明**|
 |---|---|---|
@@ -144,19 +144,19 @@ APIキーなどは不要です。
 
 |**コマンド**|**引数**|**説明**|
 |---|---|---|
-|QuickTranslation.Translator.Translate|Text[FString] Source Language Code[FName] Target Language Code[FName]|翻訳する文字列、翻訳前の言語コード、翻訳後の言語コードを指定して、翻訳を開始します。|
-|QuickTranslation.Translator.DetectLanguage|Text[FString]|指定された文字列がどの言語であるかを検出します。|
-|QuickTranslation.Translator.GetSupportedSourceLanguages| |サポートされている翻訳ソース言語のリストをログ出力します。|
-|QuickTranslation.Translator.GetSupportedTargetLanguages|SourceLanguage[FName]|サポートされている翻訳対象言語のリストをログ出力します。|
-|QuickTranslation.Translator.GetHistories| |キャッシュされた履歴のリストをログ出力します。|
-|QuickTranslation.Translator.ClearHistories| |ディスク上のキャッシュされた履歴データを削除します。|
-|QuickTranslation.Speaker.PlaySpeaker|Text[FString] Source Language Code[FName] Is Slowly[bool]|読み上げる文字列とその文字列の言語コードを指定して、音声読み上げを開始します。|
-|QuickTranslation.Speaker.StopSpeaker| |現在再生中のオーディオを停止します。|
-|QuickTranslation.Speaker.IsPlayingSpeaker| |テキストが現在読み上げられているかどうかをログ出力します。|
-|QuickTranslation.Speaker.GetCurrentProgress| |現在の再生の進行状況をログに記録します。|
-|QuickTranslation.Speaker.GetSupportedLanguages| |サポートされている言語のリストをログ出力します。|
-|QuickTranslation.Formatter.ConvertToTranslatableText|Text[FString]|指定された文字列を翻訳可能な形式に変換してログ出力します。|
-|QuickTranslation.Formatter.ConvertToFormattedTexts|Text[FString]|翻訳結果の文字列をさまざまな形式の文字列に変換してログ出力します。|
+|TranslationToolkit.Translator.Translate|Text[FString] Source Language Code[FName] Target Language Code[FName]|翻訳する文字列、翻訳前の言語コード、翻訳後の言語コードを指定して、翻訳を開始します。|
+|TranslationToolkit.Translator.DetectLanguage|Text[FString]|指定された文字列がどの言語であるかを検出します。|
+|TranslationToolkit.Translator.GetSupportedSourceLanguages| |サポートされている翻訳ソース言語のリストをログ出力します。|
+|TranslationToolkit.Translator.GetSupportedTargetLanguages|SourceLanguage[FName]|サポートされている翻訳対象言語のリストをログ出力します。|
+|TranslationToolkit.Translator.GetHistories| |キャッシュされた履歴のリストをログ出力します。|
+|TranslationToolkit.Translator.ClearHistories| |ディスク上のキャッシュされた履歴データを削除します。|
+|TranslationToolkit.Speaker.PlaySpeaker|Text[FString] Source Language Code[FName] Is Slowly[bool]|読み上げる文字列とその文字列の言語コードを指定して、音声読み上げを開始します。|
+|TranslationToolkit.Speaker.StopSpeaker| |現在再生中のオーディオを停止します。|
+|TranslationToolkit.Speaker.IsPlayingSpeaker| |テキストが現在読み上げられているかどうかをログ出力します。|
+|TranslationToolkit.Speaker.GetCurrentProgress| |現在の再生の進行状況をログに記録します。|
+|TranslationToolkit.Speaker.GetSupportedLanguages| |サポートされている言語のリストをログ出力します。|
+|TranslationToolkit.Formatter.ConvertToTranslatableText|Text[FString]|指定された文字列を翻訳可能な形式に変換してログ出力します。|
+|TranslationToolkit.Formatter.ConvertToFormattedTexts|Text[FString]|翻訳結果の文字列をさまざまな形式の文字列に変換してログ出力します。|
 
 ## 作者
 

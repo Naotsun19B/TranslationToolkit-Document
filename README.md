@@ -1,6 +1,6 @@
-# QuickTranslation
+# TranslationToolkit
 
-![Plugin](https://user-images.githubusercontent.com/51815450/139860221-2c6bfde4-2ad2-4cb5-b820-6826b0ea13cd.PNG)
+![Plugin](https://user-images.githubusercontent.com/51815450/140312410-fe1065d5-5e13-4cdc-93cb-2e0b824a0ebf.PNG)
 
 <!--ts-->
   * [Description](#Description)
@@ -91,11 +91,11 @@ Also, if the spelling or source language is wrong, suggestions for improvement w
 
 ## Settings
 
-![ShortcutKeySettings](https://user-images.githubusercontent.com/51815450/139867194-729ca071-6368-4af3-9074-7d97cdd7ed5a.PNG)
+![ShortcutKeySettings](https://user-images.githubusercontent.com/51815450/140312546-9fff3416-5c32-471d-b1de-3f2203273fd5.PNG)
 
 The shortcut keys introduced so far can be changed from Keyboard Shortcuts in the Editor Preferences.  
 
-![Settings](https://user-images.githubusercontent.com/51815450/139868640-bba8eec5-36c5-45a1-af1a-8ee4bb8e084b.PNG)
+![Settings](https://user-images.githubusercontent.com/51815450/140312455-09874421-c0ac-4f86-bd4f-11f274bb4532.PNG)
 
 |**Category**|**Item**|**Description**|
 |---|---|---|
@@ -144,19 +144,19 @@ If the text contains line breaks in any of the conversions, no conversion will b
 
 |**Command**|**Arguments**|**Description**|
 |---|---|---|
-|QuickTranslation.Translator.Translate|Text[FString] Source Language Code[FName] Target Language Code[FName]|Specify the character string to be translated, the language code before translation, and the language code after translation, and start translation.|
-|QuickTranslation.Translator.DetectLanguage|Text[FString]|Detects what language the specified string is in.|
-|QuickTranslation.Translator.GetSupportedSourceLanguages| |Logs a list of supported translation source languages.|
-|QuickTranslation.Translator.GetSupportedTargetLanguages|SourceLanguage[FName]|Logs a list of supported translation target languages.|
-|QuickTranslation.Translator.GetHistories| |Logs a list of cached histories.|
-|QuickTranslation.Translator.ClearHistories| |Delete cached histories data and json data on disk.|
-|QuickTranslation.Speaker.PlaySpeaker|Text[FString] Source Language Code[FName] Is Slowly[bool]|Specify the sentence you want to read and the language code of that sentence, and start reading.|
-|QuickTranslation.Speaker.StopSpeaker| |Stop the currently playing audio.|
-|QuickTranslation.Speaker.IsPlayingSpeaker| |Logs whether the text is currently being read aloud.|
-|QuickTranslation.Speaker.GetCurrentProgress| |Logs the current playback progress.|
-|QuickTranslation.Speaker.GetSupportedLanguages| |Logs a list of supported languages.|
-|QuickTranslation.Formatter.ConvertToTranslatableText|Text[FString]|Converts the specified string to a translatable format and returns it.|
-|QuickTranslation.Formatter.ConvertToFormattedTexts|Text[FString]|Converts the translation result string to a string in various formats and returns it.|
+|TranslationToolkit.Translator.Translate|Text[FString] Source Language Code[FName] Target Language Code[FName]|Specify the character string to be translated, the language code before translation, and the language code after translation, and start translation.|
+|TranslationToolkit.Translator.DetectLanguage|Text[FString]|Detects what language the specified string is in.|
+|TranslationToolkit.Translator.GetSupportedSourceLanguages| |Logs a list of supported translation source languages.|
+|TranslationToolkit.Translator.GetSupportedTargetLanguages|SourceLanguage[FName]|Logs a list of supported translation target languages.|
+|TranslationToolkit.Translator.GetHistories| |Logs a list of cached histories.|
+|TranslationToolkit.Translator.ClearHistories| |Delete cached histories data and json data on disk.|
+|TranslationToolkit.Speaker.PlaySpeaker|Text[FString] Source Language Code[FName] Is Slowly[bool]|Specify the sentence you want to read and the language code of that sentence, and start reading.|
+|TranslationToolkit.Speaker.StopSpeaker| |Stop the currently playing audio.|
+|TranslationToolkit.Speaker.IsPlayingSpeaker| |Logs whether the text is currently being read aloud.|
+|TranslationToolkit.Speaker.GetCurrentProgress| |Logs the current playback progress.|
+|TranslationToolkit.Speaker.GetSupportedLanguages| |Logs a list of supported languages.|
+|TranslationToolkit.Formatter.ConvertToTranslatableText|Text[FString]|Converts the specified string to a translatable format and returns it.|
+|TranslationToolkit.Formatter.ConvertToFormattedTexts|Text[FString]|Converts the translation result string to a string in various formats and returns it.|
 
 ## Author
 

@@ -33,7 +33,7 @@ It also has the ability to translate the selected text and replace it with the t
 ## Requirement
 
 Target version : UE4.26 ～ 4.27 (UE5.0EA)    
-Target platform : Windows, Mac, Linux    
+Target platform : Windows    
 
 ## Features And Usages
 

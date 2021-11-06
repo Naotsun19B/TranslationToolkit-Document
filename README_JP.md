@@ -35,6 +35,10 @@
 対象バージョン : UE4.26 ～ 4.27  
 対象プラットフォーム : Windows
 
+## インストール  
+
+[マーケットプレイス](https://www.unrealengine.com/marketplace/ja/product/translation-toolkit)からインストールしてください。
+
 ## 機能と使い方
 
 ### Translate
@@ -161,3 +165,8 @@ APIキーなどは不要です。
 ## 作者
 
 [Naotsun](https://twitter.com/Naotsun_UE)
+
+## 履歴
+
+- (2021/11/06) v1.0   
+  プラグインを公開

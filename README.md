@@ -35,6 +35,10 @@ It also has the ability to translate the selected text and replace it with the t
 Target version : UE4.26 ～ 4.27 (UE5.0EA)    
 Target platform : Windows    
 
+## Installation  
+
+Install from the [marketplace](https://www.unrealengine.com/marketplace/en/product/translation-toolkit).
+
 ## Features And Usages
 
 ### Translate
@@ -161,3 +165,8 @@ If the text contains line breaks in any of the conversions, no conversion will b
 ## Author
 
 [Naotsun](https://twitter.com/Naotsun_UE)
+
+## History  
+
+- (2021/11/06) v1.0   
+  Publish plugin

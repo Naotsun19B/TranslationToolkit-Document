@@ -87,10 +87,14 @@ The translation panel can be displayed from the Window menu at the top of the le
 
 ![AdvancedTranslationPanel](https://user-images.githubusercontent.com/51815450/139865745-acae30db-726b-4c32-a7de-5ae34b18c920.PNG)
 
-Basically, it is the same as the pop-up window, but the translation panel has some additional features.    
-・Recycle bin button : Return the translation panel to its empty state.    
-・History button     : Display the list of translation history and show the selected history in the panel.    
-・Copy button        : Copy the translated text to the clipboard.   
+Basically, it is the same as the pop-up window, but the translation panel has some additional features.
+
+|**Button**|**Function**|
+|---|---|
+|Recycle bin button|Return the translation panel to its empty state.|
+|History button|Display the list of translation history and show the selected history in the panel.|
+|Copy button|Copy the translated text to the clipboard.|
+
 Also, if the spelling or source language is wrong, suggestions for improvement will be displayed at the bottom of the panel, and clicking on the link will correct the spelling or source language.   
 
 ## Settings

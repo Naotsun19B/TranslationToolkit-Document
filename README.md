@@ -176,7 +176,7 @@ If the text contains line breaks in any of the conversions, no conversion will b
 ## History  
 
 - (2021/12/13) v1.1   
-  Supported to use the minimum functions even in versions prior to UE 4.25  
+  Supported to use the minimum functions even in versions prior to UE 4.25(It is not supported in the marketplace, so you will need to downgrade manually.)  
   Pop-up window size can now be specified from editor preferences  
 
 

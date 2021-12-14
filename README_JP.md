@@ -119,9 +119,9 @@
 |Selector-Language Picker|Display Text Format|言語選択をするUIで各項目の言語の表示フォーマットを指定します。|
 |Selector-Language Picker|Can Search By Language Code|言語選択をするUIの検索欄で言語コードでの検索ができるかどうかを指定します。|
 |Translate|Play Speaker Automatically|ポップアップウィンドウを表示した時に翻訳元、または翻訳後のテキストを自動的に読み上げるかどうかを指定します。|
-| |bDeterminePanelSizeManually|ポップアップウィンドウのサイズを手動で設定するかどうかを指定します。|
-| |SimpleTranslationPanelHeightScale|ポップアップウィンドウのサイズを計算するときに使用されるウィンドウの高さのスケール。 bDeterminePanelSizeManuallyがfalseの場合に設定できます。|
-| |SimpleTranslationPanelSize|ポップアップウィンドウのサイズを指定します。 bDeterminePanelSizeManuallyがtrueの場合に設定できます。|
+| |Determine Panel Size Manually|ポップアップウィンドウのサイズを手動で設定するかどうかを指定します。|
+| |Panel Height Scale|ポップアップウィンドウのサイズを計算するときに使用されるウィンドウの高さのスケール。 bDeterminePanelSizeManuallyがfalseの場合に設定できます。|
+| |Panel Size|ポップアップウィンドウのサイズを指定します。 bDeterminePanelSizeManuallyがtrueの場合に設定できます。|
 |Translate And Replace|Is Select Target Language Before Translate|翻訳前に翻訳先の言語を選択するセレクタUIを表示するかどうかを指定します。|
 |Translate Tooltip|Use Simple Translate Panel|翻訳結果をポップアップウィンドウで表示するかどうかを指定します。|
 |Read Aloud Text|Read Aloud Text Slowly|テキスト読み上げの速度をゆっくりにするかどうかを指定します。|

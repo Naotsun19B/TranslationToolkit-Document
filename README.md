@@ -119,6 +119,9 @@ The shortcut keys introduced so far can be changed from Keyboard Shortcuts in th
 |Selector-Language Picker|Display Text Format|Specify the display format of the language for each item in the UI for language selection.|
 |Selector-Language Picker|Can Search By Language Code|Specify whether or not you can search by language code in the search field of the UI for language selection.|
 |Translate|Play Speaker Automatically|Specifies whether to automatically read out the source or target text when a pop-up window is displayed.|
+| |bDeterminePanelSizeManually|Specifies whether to manually set the size of the panel that displays the translation results.|
+| |SimpleTranslationPanelHeightScale|Panel height scale used when calculating the size of the panel displaying the translation results. It can be set when bDeterminePanelSizeManually is false.|
+| |SimpleTranslationPanelSize|Specifies the size of the panel that displays the translation results. It can be set when bDeterminePanelSizeManually is true.|
 |Translate And Replace|Is Select Target Language Before Translate|Specify whether or not to show the selector UI to select the target language before translation.|
 |Translate Tooltip|Use Simple Translate Panel|Specifies whether to show the translation result in a pop-up window.|
 |Read Aloud Text|Read Aloud Text Slowly|Specifies whether or not to slow down the speed of text reading.|
@@ -171,6 +174,11 @@ If the text contains line breaks in any of the conversions, no conversion will b
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## History  
+
+- (2021/12/13) v1.1   
+  Supported to use the minimum functions even in versions prior to UE 4.25  
+  Pop-up window size can now be specified from editor preferences  
+
 
 - (2021/11/06) v1.0   
   Publish plugin

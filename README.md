@@ -32,8 +32,10 @@ It also has the ability to translate the selected text and replace it with the t
 
 ## Requirement
 
-Target version : UE4.26 ～ 4.27 (UE5.0EA)    
+Target version : UE4.25 ～ 4.27 (UE5.0EA)    
 Target platform : Windows    
+
+UE4.25 can only use Libre Translate as a translation engine and cannot read aloud.  
 
 ## Installation  
 
@@ -176,10 +178,14 @@ If the text contains line breaks in any of the conversions, no conversion will b
 
 ## History  
 
+- (2022/01/18) v1.2   
+  Changed to save the changes in the editor environment settings to the ini file under the Saved folder.
+  
+
 - (2021/12/13) v1.1   
   Supported to use the minimum functions even in versions prior to UE 4.25(It is not supported in the marketplace, so you will need to downgrade manually.)  
   Pop-up window size can now be specified from editor preferences  
-
+  
 
 - (2021/11/06) v1.0   
   Publish plugin

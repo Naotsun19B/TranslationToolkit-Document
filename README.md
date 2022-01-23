@@ -16,6 +16,7 @@
     * [Translation engine provided by default](#translation-engine-provided-by-default)
       * [Google Translate (No API key required)](#google-translate-no-api-key-required)
       * [Libre Translate](#libre-translate)
+      * [Microsoft Translator](#microsoft-translator)
     * [API used for reading text provided by default](#api-used-for-reading-text-provided-by-default)
       * [Google Text To Speech (No API key required)](#google-text-to-speech-no-api-key-required)
     * [Formatter class provided by default](#formatter-class-provided-by-default)
@@ -141,6 +142,12 @@ The translation is done using the [Libre Translate web API](https://github.com/L
 No API key is required, and there are no restrictions on the number of translation requests.    
 Pronunciation text retrieval is not supported.  
 
+#### ・Microsoft Translator
+The translation is done using the [Microsoft Translator](https://api.rakuten.net/microsoft-azure-org-microsoft-cognitive-services/api/microsoft-translator-text/endpoints).  
+Get your API key [here](https://api.rakuten.net/microsoft-azure-org-microsoft-cognitive-services/api/microsoft-translator-text/pricing).  
+The number of translation requests depends on the contract plan, but the free plan is 500000/months.  
+Pronunciation text retrieval is not supported.
+
 ### API used for reading text provided by default
 
 #### ・Google Text To Speech (No API key required)
@@ -178,14 +185,15 @@ If the text contains line breaks in any of the conversions, no conversion will b
 
 ## History  
 
+- (2022/01/24) v1.3   
+  Added translation engine for Microsoft Translator
+
 - (2022/01/18) v1.2   
   Changed to save the changes in the editor environment settings to the ini file under the Saved folder.
-  
 
 - (2021/12/13) v1.1   
   Supported to use the minimum functions even in versions prior to UE 4.25(It is not supported in the marketplace, so you will need to downgrade manually.)  
-  Pop-up window size can now be specified from editor preferences  
-  
+  Pop-up window size can now be specified from editor preferences
 
 - (2021/11/06) v1.0   
   Publish plugin

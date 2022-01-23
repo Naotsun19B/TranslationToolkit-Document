@@ -16,6 +16,7 @@
     * [デフォルトで用意されている翻訳エンジン](#デフォルトで用意されている翻訳エンジン)
       * [Google Translate (No API key required)](#google-translate-no-api-key-required)
       * [Libre Translate](#libre-translate)
+      * [Microsoft Translator](#microsoft-translator)
     * [デフォルトで用意されているテキスト読み上げに使うAPI](#デフォルトで用意されているテキスト読み上げに使うAPI)
       * [Google Text To Speech (No API key required)](#google-text-to-speech-no-api-key-required)
     * [デフォルトで用意されているフォーマッタークラス](#デフォルトで用意されているフォーマッタークラス)
@@ -141,6 +142,12 @@ APIキーなどは不要ですが、１時間当たりの翻訳リクエスト�
 APIキーなどは不要で、翻訳リクエストの数などの制限はありません。  
 発音テキストの取得はサポートされていません。
 
+#### ・Microsoft Translator
+[Microsoft Translator](https://api.rakuten.net/microsoft-azure-org-microsoft-cognitive-services/api/microsoft-translator-text/endpoints) を使用して翻訳を行います。  
+[こちら](https://api.rakuten.net/microsoft-azure-org-microsoft-cognitive-services/api/microsoft-translator-text/pricing) からAPIキーを取得してください。  
+翻訳リクエストの数は契約プランによって違いますが、フリープランでは500000/月です。  
+発音テキストの取得はサポートされていません。
+
 ### デフォルトで用意されているテキスト読み上げに使うAPI
 
 #### ・Google Text To Speech (No API key required)
@@ -178,14 +185,15 @@ APIキーなどは不要です。
 
 ## 履歴
 
+- (2022/01/24) v1.3   
+  Microsoft Translatorの翻訳エンジンを追加
+
 - (2022/01/18) v1.2   
   エディタ環境設定での変更をSavedフォルダ以下のiniファイルにセーブするように
-  
 
 - (2021/12/13) v1.1   
   UE4.25以前のバージョンでも最低限の機能は使用できるように（マーケットプレイスではサポートしていないため、手動でダウングレードする必要があります）  
   ポップアップウィンドウのサイズをエディタ環境設定から指定できるように  
-  
 
 - (2021/11/06) v1.0   
   プラグインを公開

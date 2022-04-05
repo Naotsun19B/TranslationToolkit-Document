@@ -185,6 +185,9 @@ If the text contains line breaks in any of the conversions, no conversion will b
 
 ## History  
 
+- (2022/04/06) v1.4   
+  Added a button to open the plugin settings screen in the translation panel
+
 - (2022/01/24) v1.3   
   Added translation engine for Microsoft Translator
 

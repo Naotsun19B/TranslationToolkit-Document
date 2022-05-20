@@ -33,7 +33,7 @@ It also has the ability to translate the selected text and replace it with the t
 
 ## Requirement
 
-Target version : UE4.25 ～ 5.0
+Target version : UE4.25 ～ 5.0  
 Target platform : Windows    
 
 UE4.25 can only use Libre Translate as a translation engine and cannot read aloud.  

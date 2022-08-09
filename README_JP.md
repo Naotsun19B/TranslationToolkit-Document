@@ -1,6 +1,6 @@
 # TranslationToolkit
 
-![Plugin](https://user-images.githubusercontent.com/51815450/140312410-fe1065d5-5e13-4cdc-93cb-2e0b824a0ebf.PNG)
+![Plugin](https://user-images.githubusercontent.com/51815450/183342025-2f6691d8-a665-49cb-9e63-bed7b0cee14f.PNG)
 
 <!--ts-->
   * [概要](#概要)
@@ -47,11 +47,11 @@ UE4.25は使用できる翻訳エンジンがLibre Translateのみで、音声�
 
 ### Translate
 
-![Translate](https://user-images.githubusercontent.com/51815450/139859340-acd76e94-2b9e-423a-be67-a55b8798ee0a.gif)
+https://user-images.githubusercontent.com/51815450/183342098-c2a65691-2401-46e0-8859-811baf1c00c1.mp4
 
 デフォルトのショートカットキーは```Shift + Ctrl + Z```で、マウスポインタ直下にあるテキストを翻訳し、結果をポップアップウィンドウで表示します。
 
-![SimpleTranslationPanel](https://user-images.githubusercontent.com/51815450/139862764-6e715539-1f01-4b32-ba56-4d6c0a3cfb5f.PNG)
+![SimpleTranslationPanel](https://user-images.githubusercontent.com/51815450/183342196-a25ce597-0f13-4f8f-bc2b-87929a1bd3b4.PNG)
 
 スピーカーボタンで翻訳元、翻訳先のテキストを読み上げます。(対応していない言語の場合はボタンが押せなくなります。)  
 スピーカーボタンの隣のコンボボックスで翻訳元、翻訳先の言語を設定できます。  
@@ -60,8 +60,9 @@ UE4.25は使用できる翻訳エンジンがLibre Translateのみで、音声�
 
 ### Translate And Replace
 
-![TranslateAndReplace_0](https://user-images.githubusercontent.com/51815450/139859834-dac9bfd4-e77a-490c-a01c-dfe75ab0d982.gif)  
-![TranslateAndReplace_1](https://user-images.githubusercontent.com/51815450/139859902-f0f5e55f-0bd2-414b-af9b-dee58ca53488.gif)
+https://user-images.githubusercontent.com/51815450/183342242-446034f7-c05b-46d4-b1c9-d5f78db560d5.mp4
+
+https://user-images.githubusercontent.com/51815450/183342269-fce16ad9-0f63-4f18-aabe-99b6eebe886e.mp4
 
 デフォルトのショートカットキーは```Shift + Ctrl + X```で、選択中のテキストを翻訳し、結果に置き換えます。  
 関数名や変数名など改行を含まないテキストで使用すると、置き換えるフォーマットを選択することができます。  
@@ -69,7 +70,7 @@ UE4.25は使用できる翻訳エンジンがLibre Translateのみで、音声�
 
 ### Translate Tooltip
 
-![TranslateTooltip](https://user-images.githubusercontent.com/51815450/139860024-0291ca09-232b-4916-b52b-54dd79be7945.gif)
+https://user-images.githubusercontent.com/51815450/183342335-3c5eaa17-2407-40f4-acb3-7d81941adb70.mp4
 
 デフォルトのショートカットキーは```Shift + Ctrl + C```で、現在表示されているツールチップを翻訳し、結果に置き換えます。  
 翻訳結果はそのツールチップが閉じられるまで保持されます。  
@@ -81,15 +82,15 @@ UE4.25は使用できる翻訳エンジンがLibre Translateのみで、音声�
 
 ### Open Advanced Translation Panel
 
-![OpenTranslationPanel](https://user-images.githubusercontent.com/51815450/139860098-f95cbd7d-c44f-4aa7-b0de-1c84d641b03d.gif)
+https://user-images.githubusercontent.com/51815450/183342413-270417d3-6968-4fb7-9094-88b0a46e1ba5.mp4
 
 デフォルトのショートカットキーは割り当てられていません。割り当てた場合、翻訳パネルを表示することができます。
 
-![OpenTranslationPanelMenu](https://user-images.githubusercontent.com/51815450/139865339-8614fc2e-f73e-41b9-a1d0-02f63c8e36a0.PNG)
+![OpenTranslationPanelMenu](https://user-images.githubusercontent.com/51815450/183342454-cf985a4c-a5db-43d4-afd2-973e5b4a5514.PNG)
 
 レベルエディタ上部のWindowメニューから翻訳パネルを表示することができます。
 
-![AdvancedTranslationPanel](https://user-images.githubusercontent.com/51815450/139865745-acae30db-726b-4c32-a7de-5ae34b18c920.PNG)
+![AdvancedTranslationPanel](https://user-images.githubusercontent.com/51815450/183342487-9be57407-e625-4fcf-b839-e5d447bf8f47.PNG)
 
 基本的にはポップアップウィンドウと変わりませんが、翻訳パネルではいくつか機能が追加されています。  
 
@@ -103,11 +104,11 @@ UE4.25は使用できる翻訳エンジンがLibre Translateのみで、音声�
 
 ## オプション
 
-![ShortcutKeySettings](https://user-images.githubusercontent.com/51815450/140312546-9fff3416-5c32-471d-b1de-3f2203273fd5.PNG)
+![ShortcutKeySettings](https://user-images.githubusercontent.com/51815450/183342519-5972f6a2-32e0-4412-8b99-a877cd3b937b.PNG)
 
 ここまででご紹介したショートカットキーはエディタ環境設定のキーボードショートカットから変更できます。
 
-![Settings](https://user-images.githubusercontent.com/51815450/140312455-09874421-c0ac-4f86-bd4f-11f274bb4532.PNG)
+![Settings](https://user-images.githubusercontent.com/51815450/183342556-feee7b9d-0944-4890-bfce-d02e673d3e88.PNG)
 
 |**カテゴリ**|**項目**|**説明**|
 |---|---|---|
@@ -184,6 +185,9 @@ APIキーなどは不要です。
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## 履歴
+
+- (2022/08/08) v1.5   
+  ポップアップウィンドウに翻訳元と翻訳後のテキストをコピーするボタンを追加しました
 
 - (2022/04/06) v1.4   
   翻訳パネルにプラグインの設定画面を開くボタンを追加しました

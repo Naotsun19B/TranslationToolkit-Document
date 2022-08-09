@@ -1,6 +1,6 @@
 # TranslationToolkit
 
-![Plugin](https://user-images.githubusercontent.com/51815450/140312410-fe1065d5-5e13-4cdc-93cb-2e0b824a0ebf.PNG)
+![Plugin](https://user-images.githubusercontent.com/51815450/183342025-2f6691d8-a665-49cb-9e63-bed7b0cee14f.PNG)
 
 <!--ts-->
   * [Description](#Description)
@@ -47,11 +47,11 @@ If the feature is not available after installing the plugin, it is possible that
 
 ### Translate
 
-![Translate](https://user-images.githubusercontent.com/51815450/139859340-acd76e94-2b9e-423a-be67-a55b8798ee0a.gif)
+https://user-images.githubusercontent.com/51815450/183342098-c2a65691-2401-46e0-8859-811baf1c00c1.mp4
 
 The default shortcut key is ```Shift + Ctrl + Z```, which translates the text under the mouse pointer and displays the result in a pop-up window.  
 
-![SimpleTranslationPanel](https://user-images.githubusercontent.com/51815450/139862764-6e715539-1f01-4b32-ba56-4d6c0a3cfb5f.PNG)
+![SimpleTranslationPanel](https://user-images.githubusercontent.com/51815450/183342196-a25ce597-0f13-4f8f-bc2b-87929a1bd3b4.PNG)
 
 Use the speaker buttons to read out the source and target text. (If the language is not supported, you will not be able to press the button.)    
 The combo box next to the speaker button allows you to set the source and destination languages.  
@@ -60,8 +60,9 @@ This pop-up window will be automatically closed by clicking anywhere other than 
 
 ### Translate And Replace
 
-![TranslateAndReplace_0](https://user-images.githubusercontent.com/51815450/139859834-dac9bfd4-e77a-490c-a01c-dfe75ab0d982.gif)  
-![TranslateAndReplace_1](https://user-images.githubusercontent.com/51815450/139859902-f0f5e55f-0bd2-414b-af9b-dee58ca53488.gif)
+https://user-images.githubusercontent.com/51815450/183342242-446034f7-c05b-46d4-b1c9-d5f78db560d5.mp4
+
+https://user-images.githubusercontent.com/51815450/183342269-fce16ad9-0f63-4f18-aabe-99b6eebe886e.mp4
 
 The default shortcut key is ```Shift + Ctrl + X```, which translates the currently selected text and replaces it with the result.    
 When used with text that does not contain line breaks, such as function or variable names, you can choose the format to replace them with.    
@@ -69,7 +70,7 @@ It is also possible to make the selector UI to choose the language to be transla
 
 ### Translate Tooltip
 
-![TranslateTooltip](https://user-images.githubusercontent.com/51815450/139860024-0291ca09-232b-4916-b52b-54dd79be7945.gif)
+https://user-images.githubusercontent.com/51815450/183342335-3c5eaa17-2407-40f4-acb3-7d81941adb70.mp4
 
 The default shortcut key is ```Shift + Ctrl + C```, which translates the currently displayed tooltip and replaces it with the result.    
 The translation result will be kept until the tooltip is closed.    
@@ -81,15 +82,15 @@ The default shortcut key is ```Shift + Ctrl + V```, which will read out the text
 
 ### Open Advanced Translation Panel
 
-![OpenTranslationPanel](https://user-images.githubusercontent.com/51815450/139860098-f95cbd7d-c44f-4aa7-b0de-1c84d641b03d.gif)
+https://user-images.githubusercontent.com/51815450/183342413-270417d3-6968-4fb7-9094-88b0a46e1ba5.mp4
 
 The default shortcut key is not assigned. If you assign it, you will be able to see the translation panel.  
 
-![OpenTranslationPanelMenu](https://user-images.githubusercontent.com/51815450/139865339-8614fc2e-f73e-41b9-a1d0-02f63c8e36a0.PNG)
+![OpenTranslationPanelMenu](https://user-images.githubusercontent.com/51815450/183342454-cf985a4c-a5db-43d4-afd2-973e5b4a5514.PNG)
 
 The translation panel can be displayed from the Window menu at the top of the level editor.  
 
-![AdvancedTranslationPanel](https://user-images.githubusercontent.com/51815450/139865745-acae30db-726b-4c32-a7de-5ae34b18c920.PNG)
+![AdvancedTranslationPanel](https://user-images.githubusercontent.com/51815450/183342487-9be57407-e625-4fcf-b839-e5d447bf8f47.PNG)
 
 Basically, it is the same as the pop-up window, but the translation panel has some additional features.
 
@@ -103,11 +104,11 @@ Also, if the spelling or source language is wrong, suggestions for improvement w
 
 ## Settings
 
-![ShortcutKeySettings](https://user-images.githubusercontent.com/51815450/140312546-9fff3416-5c32-471d-b1de-3f2203273fd5.PNG)
+![ShortcutKeySettings](https://user-images.githubusercontent.com/51815450/183342519-5972f6a2-32e0-4412-8b99-a877cd3b937b.PNG)
 
 The shortcut keys introduced so far can be changed from Keyboard Shortcuts in the Editor Preferences.  
 
-![Settings](https://user-images.githubusercontent.com/51815450/140312455-09874421-c0ac-4f86-bd4f-11f274bb4532.PNG)
+![Settings](https://user-images.githubusercontent.com/51815450/183342556-feee7b9d-0944-4890-bfce-d02e673d3e88.PNG)
 
 |**Category**|**Item**|**Description**|
 |---|---|---|
@@ -185,6 +186,9 @@ If the text contains line breaks in any of the conversions, no conversion will b
 
 ## History  
 
+- (2022/08/08) v1.5   
+  Added button to copy original and translated text in pop-up window
+
 - (2022/04/06) v1.4   
   Added a button to open the plugin settings screen in the translation panel
 
@@ -192,10 +196,10 @@ If the text contains line breaks in any of the conversions, no conversion will b
   Added translation engine for Microsoft Translator
 
 - (2022/01/18) v1.2   
-  Changed to save the changes in the editor environment settings to the ini file under the Saved folder.
+  Changed to save the changes in the editor environment settings to the ini file under the Saved folder
 
 - (2021/12/13) v1.1   
-  Supported to use the minimum functions even in versions prior to UE 4.25(It is not supported in the marketplace, so you will need to downgrade manually.)  
+  Supported to use the minimum functions even in versions prior to UE 4.25(It is not supported in the marketplace, so you will need to downgrade manually)  
   Pop-up window size can now be specified from editor preferences
 
 - (2021/11/06) v1.0   

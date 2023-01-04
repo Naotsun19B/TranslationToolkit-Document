@@ -33,7 +33,7 @@ It also has the ability to translate the selected text and replace it with the t
 
 ## Requirement
 
-Target version : UE4.25 ～ 5.0  
+Target version : UE4.25 ～ 5.1  
 Target platform : Windows    
 
 UE4.25 can only use Libre Translate as a translation engine and cannot read aloud.  
@@ -185,6 +185,9 @@ If the text contains line breaks in any of the conversions, no conversion will b
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## History  
+
+- (2022/11/08) v1.6   
+  Added support for UE5.1  
 
 - (2022/08/08) v1.5   
   Added button to copy original and translated text in pop-up window

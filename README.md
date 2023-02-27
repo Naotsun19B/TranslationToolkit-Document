@@ -17,6 +17,7 @@
       * [Google Translate (No API key required)](#google-translate-no-api-key-required)
       * [Libre Translate](#libre-translate)
       * [Microsoft Translator](#microsoft-translator)
+      * [DeepL Translate (No API key required)](#deepl-translate-no-api-key-required)
     * [API used for reading text provided by default](#api-used-for-reading-text-provided-by-default)
       * [Google Text To Speech (No API key required)](#google-text-to-speech-no-api-key-required)
     * [Formatter class provided by default](#formatter-class-provided-by-default)
@@ -149,6 +150,11 @@ Get your API key [here](https://api.rakuten.net/microsoft-azure-org-microsoft-co
 The number of translation requests depends on the contract plan, but the free plan is 500000/months.  
 Pronunciation text retrieval is not supported.
 
+#### ・DeepL Translate (No API key required)
+The translation is done using the [deepl-translate](https://pypi.org/project/deepl-translate/) module in Python via PythonScriptPlugin.  
+No API key is required, but there is a limit to the number of translation requests per hour.  
+Pronunciation text retrieval is not supported.   
+
 ### API used for reading text provided by default
 
 #### ・Google Text To Speech (No API key required)
@@ -185,6 +191,9 @@ If the text contains line breaks in any of the conversions, no conversion will b
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## History  
+
+- (2023/02/28) v1.7   
+  Added translation engine for DeepL  
 
 - (2022/11/08) v1.6   
   Added support for UE5.1  

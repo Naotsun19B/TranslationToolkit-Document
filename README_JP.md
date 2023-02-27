@@ -17,6 +17,7 @@
       * [Google Translate (No API key required)](#google-translate-no-api-key-required)
       * [Libre Translate](#libre-translate)
       * [Microsoft Translator](#microsoft-translator)
+      * [DeepL Translate (No API key required)](#deepl-translate-no-api-key-required)
     * [デフォルトで用意されているテキスト読み上げに使うAPI](#デフォルトで用意されているテキスト読み上げに使うAPI)
       * [Google Text To Speech (No API key required)](#google-text-to-speech-no-api-key-required)
     * [デフォルトで用意されているフォーマッタークラス](#デフォルトで用意されているフォーマッタークラス)
@@ -134,20 +135,25 @@ https://user-images.githubusercontent.com/51815450/183342413-270417d3-6968-4fb7-
 
 ### デフォルトで用意されている翻訳エンジン
 
-#### ・Google Translate (No API key required)
+#### ・Google Translate (No API key required)  
 PythonScriptPluginからPythonの [googletrans](https://pypi.org/project/googletrans) モジュールを使用して翻訳を行います。  
 APIキーなどは不要ですが、１時間当たりの翻訳リクエストの数に制限があります。
 
-#### ・Libre Translate
+#### ・Libre Translate  
 [Libre TranslateのWeb API](https://github.com/LibreTranslate/LibreTranslate) を使用して翻訳を行います。
 APIキーなどは不要で、翻訳リクエストの数などの制限はありません。  
 発音テキストの取得はサポートされていません。
 
-#### ・Microsoft Translator
+#### ・Microsoft Translator  
 [Microsoft Translator](https://api.rakuten.net/microsoft-azure-org-microsoft-cognitive-services/api/microsoft-translator-text/endpoints) を使用して翻訳を行います。  
 [こちら](https://api.rakuten.net/microsoft-azure-org-microsoft-cognitive-services/api/microsoft-translator-text/pricing) からAPIキーを取得してください。  
 翻訳リクエストの数は契約プランによって違いますが、フリープランでは500000/月です。  
-発音テキストの取得はサポートされていません。
+発音テキストの取得はサポートされていません。  
+
+#### ・DeepL Translate (No API key required)  
+PythonScriptPluginからPythonの [deepl-translate](https://pypi.org/project/deepl-translate/) モジュールを使用して翻訳を行います。  
+APIキーなどは不要ですが、１時間当たりの翻訳リクエストの数に制限があります。  
+発音テキストの取得はサポートされていません。  
 
 ### デフォルトで用意されているテキスト読み上げに使うAPI
 
@@ -185,6 +191,9 @@ APIキーなどは不要です。
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## 履歴
+
+- (2023/02/28) v1.7   
+  DeepLの翻訳エンジンを追加しました  
 
 - (2022/11/08) v1.6   
   UE5.1に対応しました  

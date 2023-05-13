@@ -34,10 +34,10 @@
 
 ## 動作環境
 
-対象バージョン : UE4.25 ～ 5.1    
+対象バージョン : UE4.25 ～ 5.2    
 対象プラットフォーム : Windows  
 
-UE4.25は使用できる翻訳エンジンがLibre Translateのみで、音声読み上げができません。  
+UE4.25は使用できる翻訳エンジンがLibre TranslateとMicrosoft Translatorのみで、音声読み上げができません。  
 
 ## インストール  
 
@@ -95,11 +95,11 @@ https://user-images.githubusercontent.com/51815450/183342413-270417d3-6968-4fb7-
 
 基本的にはポップアップウィンドウと変わりませんが、翻訳パネルではいくつか機能が追加されています。  
 
-|**ボタン**|**機能**|
-|---|---|
-|ゴミ箱ボタン|翻訳パネルを空の状態に戻します。|
-|履歴ボタン|翻訳履歴のリストを表示して、選択された履歴をパネルに表示します。|
-|コピーボタン|翻訳後のテキストをクリップボードにコピーします。|
+| **ボタン** | **機能**                           |
+|---------|----------------------------------|
+| ゴミ箱ボタン  | 翻訳パネルを空の状態に戻します。                 |
+| 履歴ボタン   | 翻訳履歴のリストを表示して、選択された履歴をパネルに表示します。 |
+| コピーボタン  | 翻訳後のテキストをクリップボードにコピーします。         |
 
 また、スペルや翻訳元言語が間違っている場合は、改善案をパネル下部で表示し、リンクをクリックするとスペルや翻訳元言語が修正されます。
 
@@ -111,27 +111,27 @@ https://user-images.githubusercontent.com/51815450/183342413-270417d3-6968-4fb7-
 
 ![Settings](https://user-images.githubusercontent.com/51815450/183342556-feee7b9d-0944-4890-bfce-d02e673d3e88.PNG)
 
-|**カテゴリ**|**項目**|**説明**|
-|---|---|---|
-|General|Translator|翻訳エンジンを指定します。デフォルトで用意されている翻訳エンジンについては後述します。|
-| |Speaker|テキスト読み上げに使うAPIを指定します。デフォルトで用意されているAPIについては後述します。|
-| |Formatter|翻訳するテキストへの変換や、置き換える文字列のフォーマットを生成するクラスを指定します。デフォルトで用意されているクラスについては後述します。|
-| |Primary Language|最優先で使用される言語を指定します。言語を指定しない場合はこの言語がデフォルトで使用されます。|
-| |Secondary Language|翻訳元の言語がPrimary Languageと同じだった場合などに使用される言語を指定します。|
-|Font|Text Font|ポップアップウィンドウや翻訳パネルなどの翻訳元と翻訳後のテキストで使用されるフォントを指定します。|
-| |Pronunciation Font|ポップアップウィンドウや翻訳パネルなどの翻訳元と翻訳後の発音テキストで使用されるフォントを指定します。|
-|Selector|Panel Size|翻訳先の言語や置き換えるテキストのフォーマットなどのセレクタUIのパネルサイズを指定します。|
-| |Is Select When Double Click|セレクタUIで項目を選択するのにダブルクリックをする必要があるかどうかを指定します。|
-|Selector-Language Picker|Display Text Format|言語選択をするUIで各項目の言語の表示フォーマットを指定します。|
-|Selector-Language Picker|Can Search By Language Code|言語選択をするUIの検索欄で言語コードでの検索ができるかどうかを指定します。|
-|Translate|Play Speaker Automatically|ポップアップウィンドウを表示した時に翻訳元、または翻訳後のテキストを自動的に読み上げるかどうかを指定します。|
-| |Determine Panel Size Manually|ポップアップウィンドウのサイズを手動で設定するかどうかを指定します。|
-| |Panel Height Scale|ポップアップウィンドウのサイズを計算するときに使用されるウィンドウの高さのスケール。 bDeterminePanelSizeManuallyがfalseの場合に設定できます。|
-| |Panel Size|ポップアップウィンドウのサイズを指定します。 bDeterminePanelSizeManuallyがtrueの場合に設定できます。|
-|Translate And Replace|Is Select Target Language Before Translate|翻訳前に翻訳先の言語を選択するセレクタUIを表示するかどうかを指定します。|
-|Translate Tooltip|Use Simple Translate Panel|翻訳結果をポップアップウィンドウで表示するかどうかを指定します。|
-|Read Aloud Text|Read Aloud Text Slowly|テキスト読み上げの速度をゆっくりにするかどうかを指定します。|
-|Notification|Notification Severity|このプラグインによって発行される通知のメッセージログにフォーカスする重大度を指定します。|
+| **カテゴリ**                 | **項目**                                     | **説明**                                                                                  |
+|--------------------------|--------------------------------------------|-----------------------------------------------------------------------------------------|
+| General                  | Translator                                 | 翻訳エンジンを指定します。デフォルトで用意されている翻訳エンジンについては後述します。                                             |
+|                          | Speaker                                    | テキスト読み上げに使うAPIを指定します。デフォルトで用意されているAPIについては後述します。                                        |
+|                          | Formatter                                  | 翻訳するテキストへの変換や、置き換える文字列のフォーマットを生成するクラスを指定します。デフォルトで用意されているクラスについては後述します。                 |
+|                          | Primary Language                           | 最優先で使用される言語を指定します。言語を指定しない場合はこの言語がデフォルトで使用されます。                                         |
+|                          | Secondary Language                         | 翻訳元の言語がPrimary Languageと同じだった場合などに使用される言語を指定します。                                        |
+| Font                     | Text Font                                  | ポップアップウィンドウや翻訳パネルなどの翻訳元と翻訳後のテキストで使用されるフォントを指定します。                                       |
+|                          | Pronunciation Font                         | ポップアップウィンドウや翻訳パネルなどの翻訳元と翻訳後の発音テキストで使用されるフォントを指定します。                                     |
+| Selector                 | Panel Size                                 | 翻訳先の言語や置き換えるテキストのフォーマットなどのセレクタUIのパネルサイズを指定します。                                          |
+|                          | Is Select When Double Click                | セレクタUIで項目を選択するのにダブルクリックをする必要があるかどうかを指定します。                                              |
+| Selector-Language Picker | Display Text Format                        | 言語選択をするUIで各項目の言語の表示フォーマットを指定します。                                                        |
+| Selector-Language Picker | Can Search By Language Code                | 言語選択をするUIの検索欄で言語コードでの検索ができるかどうかを指定します。                                                  |
+| Translate                | Play Speaker Automatically                 | ポップアップウィンドウを表示した時に翻訳元、または翻訳後のテキストを自動的に読み上げるかどうかを指定します。                                  |
+|                          | Determine Panel Size Manually              | ポップアップウィンドウのサイズを手動で設定するかどうかを指定します。                                                      |
+|                          | Panel Height Scale                         | ポップアップウィンドウのサイズを計算するときに使用されるウィンドウの高さのスケール。 bDeterminePanelSizeManuallyがfalseの場合に設定できます。 |
+|                          | Panel Size                                 | ポップアップウィンドウのサイズを指定します。 bDeterminePanelSizeManuallyがtrueの場合に設定できます。                      |
+| Translate And Replace    | Is Select Target Language Before Translate | 翻訳前に翻訳先の言語を選択するセレクタUIを表示するかどうかを指定します。                                                   |
+| Translate Tooltip        | Use Simple Translate Panel                 | 翻訳結果をポップアップウィンドウで表示するかどうかを指定します。                                                        |
+| Read Aloud Text          | Read Aloud Text Slowly                     | テキスト読み上げの速度をゆっくりにするかどうかを指定します。                                                          |
+| Notification             | Notification Severity                      | このプラグインによって発行される通知のメッセージログにフォーカスする重大度を指定します。                                            |
 
 ### デフォルトで用意されている翻訳エンジン
 
@@ -170,27 +170,30 @@ APIキーなどは不要です。
 
 ## コンソールコマンド
 
-|**コマンド**|**引数**|**説明**|
-|---|---|---|
-|TranslationToolkit.Translator.Translate|Text[FString] Source Language Code[FName] Target Language Code[FName]|翻訳する文字列、翻訳前の言語コード、翻訳後の言語コードを指定して、翻訳を開始します。|
-|TranslationToolkit.Translator.DetectLanguage|Text[FString]|指定された文字列がどの言語であるかを検出します。|
-|TranslationToolkit.Translator.GetSupportedSourceLanguages| |サポートされている翻訳ソース言語のリストをログ出力します。|
-|TranslationToolkit.Translator.GetSupportedTargetLanguages|SourceLanguage[FName]|サポートされている翻訳対象言語のリストをログ出力します。|
-|TranslationToolkit.Translator.GetHistories| |キャッシュされた履歴のリストをログ出力します。|
-|TranslationToolkit.Translator.ClearHistories| |ディスク上のキャッシュされた履歴データを削除します。|
-|TranslationToolkit.Speaker.PlaySpeaker|Text[FString] Source Language Code[FName] Is Slowly[bool]|読み上げる文字列とその文字列の言語コードを指定して、音声読み上げを開始します。|
-|TranslationToolkit.Speaker.StopSpeaker| |現在再生中のオーディオを停止します。|
-|TranslationToolkit.Speaker.IsPlayingSpeaker| |テキストが現在読み上げられているかどうかをログ出力します。|
-|TranslationToolkit.Speaker.GetCurrentProgress| |現在の再生の進行状況をログに記録します。|
-|TranslationToolkit.Speaker.GetSupportedLanguages| |サポートされている言語のリストをログ出力します。|
-|TranslationToolkit.Formatter.ConvertToTranslatableText|Text[FString]|指定された文字列を翻訳可能な形式に変換してログ出力します。|
-|TranslationToolkit.Formatter.ConvertToFormattedTexts|Text[FString]|翻訳結果の文字列をさまざまな形式の文字列に変換してログ出力します。|
+| **コマンド**                                                  | **引数**                                                                | **説明**                                     |
+|-----------------------------------------------------------|-----------------------------------------------------------------------|--------------------------------------------|
+| TranslationToolkit.Translator.Translate                   | Text[FString] Source Language Code[FName] Target Language Code[FName] | 翻訳する文字列、翻訳前の言語コード、翻訳後の言語コードを指定して、翻訳を開始します。 |
+| TranslationToolkit.Translator.DetectLanguage              | Text[FString]                                                         | 指定された文字列がどの言語であるかを検出します。                   |
+| TranslationToolkit.Translator.GetSupportedSourceLanguages |                                                                       | サポートされている翻訳ソース言語のリストをログ出力します。              |
+| TranslationToolkit.Translator.GetSupportedTargetLanguages | SourceLanguage[FName]                                                 | サポートされている翻訳対象言語のリストをログ出力します。               |
+| TranslationToolkit.Translator.GetHistories                |                                                                       | キャッシュされた履歴のリストをログ出力します。                    |
+| TranslationToolkit.Translator.ClearHistories              |                                                                       | ディスク上のキャッシュされた履歴データを削除します。                 |
+| TranslationToolkit.Speaker.PlaySpeaker                    | Text[FString] Source Language Code[FName] Is Slowly[bool]             | 読み上げる文字列とその文字列の言語コードを指定して、音声読み上げを開始します。    |
+| TranslationToolkit.Speaker.StopSpeaker                    |                                                                       | 現在再生中のオーディオを停止します。                         |
+| TranslationToolkit.Speaker.IsPlayingSpeaker               |                                                                       | テキストが現在読み上げられているかどうかをログ出力します。              |
+| TranslationToolkit.Speaker.GetCurrentProgress             |                                                                       | 現在の再生の進行状況をログに記録します。                       |
+| TranslationToolkit.Speaker.GetSupportedLanguages          |                                                                       | サポートされている言語のリストをログ出力します。                   |
+| TranslationToolkit.Formatter.ConvertToTranslatableText    | Text[FString]                                                         | 指定された文字列を翻訳可能な形式に変換してログ出力します。              |
+| TranslationToolkit.Formatter.ConvertToFormattedTexts      | Text[FString]                                                         | 翻訳結果の文字列をさまざまな形式の文字列に変換してログ出力します。          |
 
 ## 作者
 
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## 履歴
+
+- (2023/05/13) v1.8   
+  UE5.2に対応しました  
 
 - (2023/02/28) v1.7   
   DeepLの翻訳エンジンを追加しました  

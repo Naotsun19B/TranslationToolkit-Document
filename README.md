@@ -34,10 +34,10 @@ It also has the ability to translate the selected text and replace it with the t
 
 ## Requirement
 
-Target version : UE4.25 ～ 5.1  
+Target version : UE4.25 ～ 5.2  
 Target platform : Windows    
 
-UE4.25 can only use Libre Translate as a translation engine and cannot read aloud.  
+UE4.25 can only use Libre Translate and Microsoft Translator as a translation engine and cannot read aloud.  
 
 ## Installation  
 
@@ -95,11 +95,11 @@ The translation panel can be displayed from the Window menu at the top of the le
 
 Basically, it is the same as the pop-up window, but the translation panel has some additional features.
 
-|**Button**|**Function**|
-|---|---|
-|Recycle bin button|Return the translation panel to its empty state.|
-|History button|Display the list of translation history and show the selected history in the panel.|
-|Copy button|Copy the translated text to the clipboard.|
+| **Button**         | **Function**                                                                        |
+|--------------------|-------------------------------------------------------------------------------------|
+| Recycle bin button | Return the translation panel to its empty state.                                    |
+| History button     | Display the list of translation history and show the selected history in the panel. |
+| Copy button        | Copy the translated text to the clipboard.                                          |
 
 Also, if the spelling or source language is wrong, suggestions for improvement will be displayed at the bottom of the panel, and clicking on the link will correct the spelling or source language.   
 
@@ -111,27 +111,27 @@ The shortcut keys introduced so far can be changed from Keyboard Shortcuts in th
 
 ![Settings](https://user-images.githubusercontent.com/51815450/183342556-feee7b9d-0944-4890-bfce-d02e673d3e88.PNG)
 
-|**Category**|**Item**|**Description**|
-|---|---|---|
-|General|Translator|Specify the translation engine. The translation engine provided by default are described later in this section.|
-| |Speaker|Specifies the API to be used for text-to-speech. The APIs provided by default are described later in this section.|
-| |Formatter|Specify the class to generate the conversion to text to be translated or the format of the string to be replaced. The classes provided by default are described later in this section.|
-| |Primary Language|Specifies the language to be used as the highest priority. If you do not specify a language, this language will be used by default.|
-| |Secondary Language|Specify the language to be used when the source language is the same as the Primary Language.|
-|Font|Text Font|Specifies the font used for the source and target text in pop-up windows and translation panels.|
-| |Pronunciation Font|Specifies the font used for the source and target pronunciation text in pop-up windows and translation panels.|
-|Selector|Panel Size|Specifies the panel size of the selector UI. The Selector UI allows you to select the language to be translated into and the format of the text to be replaced.|
-| |Is Select When Double Click|Specifies whether or not double-clicking is required to select an item in the selector UI.|
-|Selector-Language Picker|Display Text Format|Specify the display format of the language for each item in the UI for language selection.|
-|Selector-Language Picker|Can Search By Language Code|Specify whether or not you can search by language code in the search field of the UI for language selection.|
-|Translate|Play Speaker Automatically|Specifies whether to automatically read out the source or target text when a pop-up window is displayed.|
-| |Determine Panel Size Manually|Specifies whether to manually set the size of the panel that displays the translation results.|
-| |Panel Height Scale|Panel height scale used when calculating the size of the panel displaying the translation results. It can be set when bDeterminePanelSizeManually is false.|
-| |Panel Size|Specifies the size of the panel that displays the translation results. It can be set when bDeterminePanelSizeManually is true.|
-|Translate And Replace|Is Select Target Language Before Translate|Specify whether or not to show the selector UI to select the target language before translation.|
-|Translate Tooltip|Use Simple Translate Panel|Specifies whether to show the translation result in a pop-up window.|
-|Read Aloud Text|Read Aloud Text Slowly|Specifies whether or not to slow down the speed of text reading.|
-|Notification|Notification Severity|Specifies the severity to focus the message log of notifications issued by this plugin.|
+| **Category**             | **Item**                                   | **Description**                                                                                                                                                                        |
+|--------------------------|--------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| General                  | Translator                                 | Specify the translation engine. The translation engine provided by default are described later in this section.                                                                        |
+|                          | Speaker                                    | Specifies the API to be used for text-to-speech. The APIs provided by default are described later in this section.                                                                     |
+|                          | Formatter                                  | Specify the class to generate the conversion to text to be translated or the format of the string to be replaced. The classes provided by default are described later in this section. |
+|                          | Primary Language                           | Specifies the language to be used as the highest priority. If you do not specify a language, this language will be used by default.                                                    |
+|                          | Secondary Language                         | Specify the language to be used when the source language is the same as the Primary Language.                                                                                          |
+| Font                     | Text Font                                  | Specifies the font used for the source and target text in pop-up windows and translation panels.                                                                                       |
+|                          | Pronunciation Font                         | Specifies the font used for the source and target pronunciation text in pop-up windows and translation panels.                                                                         |
+| Selector                 | Panel Size                                 | Specifies the panel size of the selector UI. The Selector UI allows you to select the language to be translated into and the format of the text to be replaced.                        |
+|                          | Is Select When Double Click                | Specifies whether or not double-clicking is required to select an item in the selector UI.                                                                                             |
+| Selector-Language Picker | Display Text Format                        | Specify the display format of the language for each item in the UI for language selection.                                                                                             |
+| Selector-Language Picker | Can Search By Language Code                | Specify whether or not you can search by language code in the search field of the UI for language selection.                                                                           |
+| Translate                | Play Speaker Automatically                 | Specifies whether to automatically read out the source or target text when a pop-up window is displayed.                                                                               |
+|                          | Determine Panel Size Manually              | Specifies whether to manually set the size of the panel that displays the translation results.                                                                                         |
+|                          | Panel Height Scale                         | Panel height scale used when calculating the size of the panel displaying the translation results. It can be set when bDeterminePanelSizeManually is false.                            |
+|                          | Panel Size                                 | Specifies the size of the panel that displays the translation results. It can be set when bDeterminePanelSizeManually is true.                                                         |
+| Translate And Replace    | Is Select Target Language Before Translate | Specify whether or not to show the selector UI to select the target language before translation.                                                                                       |
+| Translate Tooltip        | Use Simple Translate Panel                 | Specifies whether to show the translation result in a pop-up window.                                                                                                                   |
+| Read Aloud Text          | Read Aloud Text Slowly                     | Specifies whether or not to slow down the speed of text reading.                                                                                                                       |
+| Notification             | Notification Severity                      | Specifies the severity to focus the message log of notifications issued by this plugin.                                                                                                |
 
 ### Translation engine provided by default
 
@@ -170,27 +170,30 @@ If the text contains line breaks in any of the conversions, no conversion will b
 
 ## Console Command
 
-|**Command**|**Arguments**|**Description**|
-|---|---|---|
-|TranslationToolkit.Translator.Translate|Text[FString] Source Language Code[FName] Target Language Code[FName]|Specify the character string to be translated, the language code before translation, and the language code after translation, and start translation.|
-|TranslationToolkit.Translator.DetectLanguage|Text[FString]|Detects what language the specified string is in.|
-|TranslationToolkit.Translator.GetSupportedSourceLanguages| |Logs a list of supported translation source languages.|
-|TranslationToolkit.Translator.GetSupportedTargetLanguages|SourceLanguage[FName]|Logs a list of supported translation target languages.|
-|TranslationToolkit.Translator.GetHistories| |Logs a list of cached histories.|
-|TranslationToolkit.Translator.ClearHistories| |Delete cached histories data and json data on disk.|
-|TranslationToolkit.Speaker.PlaySpeaker|Text[FString] Source Language Code[FName] Is Slowly[bool]|Specify the sentence you want to read and the language code of that sentence, and start reading.|
-|TranslationToolkit.Speaker.StopSpeaker| |Stop the currently playing audio.|
-|TranslationToolkit.Speaker.IsPlayingSpeaker| |Logs whether the text is currently being read aloud.|
-|TranslationToolkit.Speaker.GetCurrentProgress| |Logs the current playback progress.|
-|TranslationToolkit.Speaker.GetSupportedLanguages| |Logs a list of supported languages.|
-|TranslationToolkit.Formatter.ConvertToTranslatableText|Text[FString]|Converts the specified string to a translatable format and returns it.|
-|TranslationToolkit.Formatter.ConvertToFormattedTexts|Text[FString]|Converts the translation result string to a string in various formats and returns it.|
+| **Command**                                               | **Arguments**                                                         | **Description**                                                                                                                                      |
+|-----------------------------------------------------------|-----------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| TranslationToolkit.Translator.Translate                   | Text[FString] Source Language Code[FName] Target Language Code[FName] | Specify the character string to be translated, the language code before translation, and the language code after translation, and start translation. |
+| TranslationToolkit.Translator.DetectLanguage              | Text[FString]                                                         | Detects what language the specified string is in.                                                                                                    |
+| TranslationToolkit.Translator.GetSupportedSourceLanguages |                                                                       | Logs a list of supported translation source languages.                                                                                               |
+| TranslationToolkit.Translator.GetSupportedTargetLanguages | SourceLanguage[FName]                                                 | Logs a list of supported translation target languages.                                                                                               |
+| TranslationToolkit.Translator.GetHistories                |                                                                       | Logs a list of cached histories.                                                                                                                     |
+| TranslationToolkit.Translator.ClearHistories              |                                                                       | Delete cached histories data and json data on disk.                                                                                                  |
+| TranslationToolkit.Speaker.PlaySpeaker                    | Text[FString] Source Language Code[FName] Is Slowly[bool]             | Specify the sentence you want to read and the language code of that sentence, and start reading.                                                     |
+| TranslationToolkit.Speaker.StopSpeaker                    |                                                                       | Stop the currently playing audio.                                                                                                                    |
+| TranslationToolkit.Speaker.IsPlayingSpeaker               |                                                                       | Logs whether the text is currently being read aloud.                                                                                                 |
+| TranslationToolkit.Speaker.GetCurrentProgress             |                                                                       | Logs the current playback progress.                                                                                                                  |
+| TranslationToolkit.Speaker.GetSupportedLanguages          |                                                                       | Logs a list of supported languages.                                                                                                                  |
+| TranslationToolkit.Formatter.ConvertToTranslatableText    | Text[FString]                                                         | Converts the specified string to a translatable format and returns it.                                                                               |
+| TranslationToolkit.Formatter.ConvertToFormattedTexts      | Text[FString]                                                         | Converts the translation result string to a string in various formats and returns it.                                                                |
 
 ## Author
 
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## History  
+
+- (2023/05/13) v1.8   
+  Added support for UE5.2  
 
 - (2023/02/28) v1.7   
   Added translation engine for DeepL  

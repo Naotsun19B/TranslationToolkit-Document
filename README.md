@@ -34,7 +34,7 @@ It also has the ability to translate the selected text and replace it with the t
 
 ## Requirement
 
-Target version : UE4.25 ～ 5.4  
+Target version : UE4.27 ～ 5.5  
 Target platform : Windows    
 
 UE4.25 can only use Libre Translate and Microsoft Translator as a translation engine and cannot read aloud.  
@@ -191,6 +191,11 @@ If the text contains line breaks in any of the conversions, no conversion will b
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## History  
+
+- (2025/03/14) v2.1   
+  Added support for UE5.5  
+  Support before UE4.26 has been discontinued  
+  The internal Python API version has been updated to the latest version  
 
 - (2024/04/24) v2.0   
   Added support for UE5.4   

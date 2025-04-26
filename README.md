@@ -192,6 +192,9 @@ If the text contains line breaks in any of the conversions, no conversion will b
 
 ## History  
 
+- (2025/04/27) v2.2  
+  Fixed a bug where translation was not possible due to the update of `Google Translate (No API key required)`  
+
 - (2025/03/14) v2.1   
   Added support for UE5.5  
   Support before UE4.26 has been discontinued  

@@ -34,7 +34,7 @@
 
 ## 動作環境
 
-対象バージョン : UE4.27 ～ 5.5    
+対象バージョン : UE4.27 ～ 5.6    
 対象プラットフォーム : Windows  
 
 UE4.25は使用できる翻訳エンジンがLibre TranslateとMicrosoft Translatorのみで、音声読み上げができません。  
@@ -191,6 +191,10 @@ APIキーなどは不要です。
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## 履歴
+
+- (2025/06/06) v2.3  
+  UE5.6に対応しました  
+  エディタ環境設定が正常に保存されない不具合の修正を行いました  
 
 - (2025/04/27) v2.2  
   `Google Translate (No API key required)`のアップデートの影響で翻訳が行えなかった不具合を修正しました  

@@ -1,3 +1,7 @@
+![UE Version](https://img.shields.io/badge/Unreal%20Engine-4.27--5.7-0e1128?logo=unrealengine&logoColor=white)
+[![License: Fab Standard License (Fab EULA)](https://img.shields.io/badge/license-Fab%20Standard%20License%20%28Fab%20EULA%29-blue)](https://www.fab.com/eula)
+[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/Naotsun_UE?style=social)](https://twitter.com/Naotsun_UE)
+
 # TranslationToolkit
 
 ![Plugin](https://user-images.githubusercontent.com/51815450/183342025-2f6691d8-a665-49cb-9e63-bed7b0cee14f.PNG)
@@ -23,6 +27,7 @@
     * [Formatter class provided by default](#formatter-class-provided-by-default)
       * [DefaultFormatter](#defaultformatter)
   * [Console Command](#console-command)
+  * [License](#license)
   * [Author](#Author)
   * [History](#History)
 <!--te-->
@@ -185,6 +190,12 @@ If the text contains line breaks in any of the conversions, no conversion will b
 | TranslationToolkit.Speaker.GetSupportedLanguages          |                                                                       | Logs a list of supported languages.                                                                                                                  |
 | TranslationToolkit.Formatter.ConvertToTranslatableText    | Text[FString]                                                         | Converts the specified string to a translatable format and returns it.                                                                               |
 | TranslationToolkit.Formatter.ConvertToFormattedTexts      | Text[FString]                                                         | Converts the translation result string to a string in various formats and returns it.                                                                |
+
+## License
+
+This repository contains documentation only. No plugin source code or binaries are provided here.  
+The plugin itself is distributed on Fab and is licensed to end users under the [Fab Standard License (Fab EULA)](https://www.fab.com/eula).  
+Unless explicitly stated otherwise, all documentation content in this repository is © 2021-2026 Naotsun. All rights reserved.  
 
 ## Author
 

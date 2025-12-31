@@ -1,3 +1,7 @@
+![UE Version](https://img.shields.io/badge/Unreal%20Engine-4.27--5.7-0e1128?logo=unrealengine&logoColor=white)
+[![License: Fab Standard License (Fab EULA)](https://img.shields.io/badge/license-Fab%20Standard%20License%20%28Fab%20EULA%29-blue)](https://www.fab.com/eula)
+[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/Naotsun_UE?style=social)](https://twitter.com/Naotsun_UE)
+
 # TranslationToolkit
 
 ![Plugin](https://user-images.githubusercontent.com/51815450/183342025-2f6691d8-a665-49cb-9e63-bed7b0cee14f.PNG)
@@ -23,6 +27,7 @@
     * [デフォルトで用意されているフォーマッタークラス](#デフォルトで用意されているフォーマッタークラス)
       * [DefaultFormatter](#defaultformatter)
   * [コンソールコマンド](#コンソールコマンド)
+  * [ライセンス](#ライセンス)
   * [作者](#作者)
   * [履歴](#履歴)
 <!--te-->
@@ -185,6 +190,12 @@ APIキーなどは不要です。
 | TranslationToolkit.Speaker.GetSupportedLanguages          |                                                                       | サポートされている言語のリストをログ出力します。                   |
 | TranslationToolkit.Formatter.ConvertToTranslatableText    | Text[FString]                                                         | 指定された文字列を翻訳可能な形式に変換してログ出力します。              |
 | TranslationToolkit.Formatter.ConvertToFormattedTexts      | Text[FString]                                                         | 翻訳結果の文字列をさまざまな形式の文字列に変換してログ出力します。          |
+
+## ライセンス
+
+本リポジトリはドキュメントのみを含みます。プラグイン本体のソースコード／バイナリは含みません。  
+プラグイン本体は Fab 上で配布され、利用者には [Fab Standard License (Fab EULA)](https://www.fab.com/ja/eula) に基づいて提供されます。  
+特に明記がない限り、本リポジトリ内のドキュメントの著作権は © 2021-2026 Naotsun に帰属し、無断転載は禁止です。  
 
 ## 作者
 

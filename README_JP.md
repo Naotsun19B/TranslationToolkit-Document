@@ -1,4 +1,4 @@
-![UE Version](https://img.shields.io/badge/Unreal%20Engine-4.27--5.7-0e1128?logo=unrealengine&logoColor=white)
+![UE Version](https://img.shields.io/badge/Unreal%20Engine-4.27--5.8-0e1128?logo=unrealengine&logoColor=white)
 [![License: Fab Standard License (Fab EULA)](https://img.shields.io/badge/License-Fab%20Standard%20License%20%28Fab%20EULA%29-blue)](https://www.fab.com/eula)
 [![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/Naotsun_UE?style=social)](https://twitter.com/Naotsun_UE)
 
@@ -39,10 +39,11 @@
 
 ## 動作環境
 
-対象バージョン : UE4.27 ～ 5.7    
+対象バージョン : UE4.27 ～ 5.8    
 対象プラットフォーム : Windows  
 
 UE4.25は使用できる翻訳エンジンがLibre TranslateとMicrosoft Translatorのみで、音声読み上げができません。  
+UE5.8でキーボードショートカットが大量に追加されており、本プラグインとキーが被っている場合があるため、ショートカットキーが動作しない場合は設定をご確認ください。  
 
 ## インストール  
 
@@ -202,6 +203,9 @@ APIキーなどは不要です。
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## 履歴
+
+- (2026/06/19) v2.5  
+  UE5.8に対応しました
 
 - (2025/11/18) v2.4  
   UE5.7に対応しました  
